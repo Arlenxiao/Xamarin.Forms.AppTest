@@ -11,22 +11,6 @@ namespace Share
     {
         public Share()
         {
-
-
-
-            //var button = new Button
-            //{
-            //    Text = "来点我啊!",
-            //    VerticalOptions = LayoutOptions.CenterAndExpand,
-            //    HorizontalOptions = LayoutOptions.CenterAndExpand,
-            //};
-
-            //int clicked = 0;
-            //button.Clicked += (s, e) => button.Text = "点就点,谁怕谁: " + clicked++;
-
-            //Content = button;
-            //Content = new Label { Text="test"};
-
             #region Login in
 
             var txt_user = new Entry { Placeholder = "账号" };
@@ -56,18 +40,24 @@ namespace Share
 
             #region setting
 
+            var btn_test = new Button
+                        {
+                            Text = "来点我啊!",
+                            VerticalOptions = LayoutOptions.CenterAndExpand,
+                            HorizontalOptions = LayoutOptions.CenterAndExpand,
+                        };
+            var  count=1;
+            btn_test.Clicked+=(s,e)=>{
+                btn_test.Text = "点击我的次数:" + count++;
+            };
             var settingPage = new ContentPage
             {
                 Title = "设置",
                 Content = new StackLayout
                 {
-                    Children = { 
-                        new Button
-                        {
-                            Text = "来点我啊!",
-                            VerticalOptions = LayoutOptions.CenterAndExpand,
-                            HorizontalOptions = LayoutOptions.CenterAndExpand,
-                        }
+                    Children =
+                    {
+                        btn_test
                     }
                 }
             };
