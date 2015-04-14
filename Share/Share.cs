@@ -19,11 +19,11 @@ namespace Share
 
         Int32 count = 1;
 
-        public Share()
+        public Share(IPageManager pm)
         {
             var img = new Image()
             {
-                Source = "http://s.qdcdn.com/cl/12285817,800,450.jpg",
+                Source = ImageSource.FromFile("Logo.png"),
                 VerticalOptions = LayoutOptions.Center,
                 //Scale = 2,
                 AnchorY = 0,
@@ -40,7 +40,12 @@ namespace Share
                 BackgroundColor = Color.Blue
             };
 
-            btn_login.Clicked += (s, e) => { txt_user.Text = "阿伦"; txt_password.Text = "123456"; };
+            btn_login.Clicked += (s, e) =>
+            {
+                txt_user.Text = "阿伦"; txt_password.Text = "123456";
+                //MessagingCenter.Send(this,"Login");
+                DisplayAlert("验证错误", "用户名或密码不正确", "请重试");
+            };
 
             var profilePage = new ContentPage
             {
@@ -66,7 +71,8 @@ namespace Share
             };
             btn_test.Clicked += (s, e) =>
             {
-                btn_test.Text = "点击我的次数:" + count++;
+                //btn_test.Text = "点击我的次数:" + count++;
+                pm.NavigationPage(new LoginPage(pm));
             };
 
             var settingPage = new ContentPage
@@ -94,7 +100,7 @@ namespace Share
                 txt_password.Text = "";
                 count = 1;
             };
-            //this.BackgroundImage = "http://demo.sc.chinaz.com/Files/pic/icons/5821/0.png";
+            
         }
 
 

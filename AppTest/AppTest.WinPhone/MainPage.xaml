@@ -13,4 +13,19 @@
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait" Orientation="Portrait"
     shell:SystemTray.IsVisible="True">
+    <Canvas HorizontalAlignment="Left" Height="768" VerticalAlignment="Top" Width="480">
+        <Canvas.Background>
+            <ImageBrush Stretch="Fill" ImageSource="/Resources/bg.png"/>
+        </Canvas.Background>
+        <Image Height="125" Canvas.Left="94" Canvas.Top="102" Width="280" Source="/Resources/Logo.png"/>
+        <TextBox Height="72" Canvas.Left="14" TextWrapping="Wrap" Text="用户名" Canvas.Top="285" Width="456" BorderThickness="1" Background="{x:Null}"/>
+        <TextBox Height="72" Canvas.Left="14" TextWrapping="Wrap" Text="密码" Canvas.Top="341" Width="456"   BorderThickness="1" Background="{x:Null}"/>
+        <Image Height="31" Canvas.Left="413" Canvas.Top="305" Width="37" Source="/Resources/UsernameIcon.png"/>
+        <Image Height="31" Canvas.Left="413" Canvas.Top="362" Width="37" Source="/Resources/LockIcon.png"/>
+
+        <Button Content="登 录" Canvas.Left="14" Canvas.Top="418" BorderThickness="1" Width="456" Background="{x:Null}"/>
+        <HyperlinkButton Content="注册" Canvas.Top="714" Canvas.Left="6"/>
+        <HyperlinkButton Content="无声物联" Canvas.Top="714" Canvas.Left="347" RenderTransformOrigin="0.674,0.129"/>
+
+    </Canvas>
 </winPhone:FormsApplicationPage>

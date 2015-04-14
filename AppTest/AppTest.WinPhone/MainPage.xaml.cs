@@ -20,5 +20,10 @@ namespace AppTest.WinPhone
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new AppTest.App());
         }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
