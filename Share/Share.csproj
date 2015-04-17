@@ -38,6 +38,7 @@
     <Compile Include="LoginPage.cs" />
     <Compile Include="Share.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShareStyle.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
