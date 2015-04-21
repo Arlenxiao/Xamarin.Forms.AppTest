@@ -104,6 +104,7 @@
     <Content Include="Properties\AndroidManifest.xml" />
     <AndroidResource Include="Resources\Drawable\Logo.png" />
     <AndroidResource Include="Resources\Drawable\bg.png" />
+    <AndroidResource Include="Resources\Drawable\bg_bule.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Share\Share.csproj">

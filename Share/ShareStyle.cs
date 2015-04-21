@@ -19,8 +19,8 @@ namespace Share
                     new Setter {Property = BackgroundColorProperty, Value = Color.Transparent},
                     new Setter {Property = HeightRequestProperty, Value = 80},
                     new Setter {Property = Button.BorderWidthProperty, Value = 1},
-                    new Setter {Property = Button.BorderColorProperty, Value = Color.Green},
-                    new Setter {Property = Button.TextColorProperty, Value = Color.Green},
+                    new Setter {Property = Button.BorderColorProperty, Value = Color.White},
+                    new Setter {Property = Button.TextColorProperty, Value = Color.White},
                 }
             };
 
@@ -30,7 +30,7 @@ namespace Share
                 {
                     new Setter {Property = BackgroundColorProperty, Value = Color.Transparent},
                     new Setter {Property = HeightRequestProperty, Value = 80},
-                    new Setter {Property = Entry.TextColorProperty, Value = Color.Green},
+                    new Setter {Property = Entry.TextColorProperty, Value = Color.White},
                 }
         };
 
@@ -40,7 +40,8 @@ namespace Share
                 {
                     new Setter {Property = BackgroundColorProperty, Value = Color.Transparent},
                     new Setter {Property = HeightRequestProperty, Value = 80},
-                    new Setter {Property = Label.TextColorProperty, Value = Color.Green},
+                    new Setter {Property = WidthRequestProperty, Value = 120},
+                    new Setter {Property = Label.TextColorProperty, Value = Color.White},
                 }
         };
     }

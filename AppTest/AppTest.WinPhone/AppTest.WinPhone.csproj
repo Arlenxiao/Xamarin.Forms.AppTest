@@ -124,6 +124,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="bg.png" />
+    <Content Include="bg_bule.png" />
     <Content Include="Logo.png" />
     <Content Include="README_FIRST.txt" />
     <Content Include="Resources\bg.png" />
